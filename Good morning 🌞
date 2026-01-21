@@ -1,0 +1,87 @@
+Index.html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Morning Anshika</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ffe6f0, #fff);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff6b9d;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 10px 0;
+            color: #ff4f8b;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .heart {
+            font-size: 2rem;
+            margin: 10px 0;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        .music-box {
+            margin-top: 15px;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://i.ibb.co/chkNhtF8/Anshika.jpg" class="profile-pic" alt="Anshika">
+
+    <h1>सुप्रभात, अंशिका! 🌸</h1>
+    <p>आज का दिन आपके लिए ढेर सारी खुशियाँ और मुस्कुराहट लेकर आए।</p>
+
+    <div class="heart">❤️</div>
+
+    <div class="music-box">
+        <audio controls loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            आपका ब्राउज़र म्यूजिक सपोर्ट नहीं करता।
+        </audio>
+        <p style="font-size: 0.7rem; color: #666;">(म्यूजिक प्ले बटन दबाएं 🎵)</p>
+    </div>
+</div>
+
+</body>
+</html>
